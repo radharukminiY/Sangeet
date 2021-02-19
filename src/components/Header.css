@@ -1,0 +1,27 @@
+#header {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:aqua;
+
+  #brand {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-left: 12px;
+  }
+
+  #header-search-form {
+    margin-right: 28px;
+    width: 40%;
+    max-width: 400px;
+
+
+  }
+}
