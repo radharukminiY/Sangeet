@@ -1,0 +1,25 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["prettier"],
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "bracketSpacing": false,
+        "jsxBracketSameLine": true,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "endOfLine": "auto",
+        "semi": true,
+        "printWidth": 120
+      }
+    ]
+  }
+}
