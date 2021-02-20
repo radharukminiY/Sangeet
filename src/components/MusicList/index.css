@@ -1,0 +1,41 @@
+#music-list {
+  width: 90vw;
+  max-width: 600px;
+  margin: 14px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+
+  .music-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -8px 0;
+
+    .play-pause-btn {
+      width: 60px;
+      cursor: pointer;
+      transition-duration: 300ms;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+
+    .item-name {
+      color: crimson;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 0 12px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .item-duration {
+      color: #222;
+      padding: 0 12px;
+      font-size: 14px;
+    }
+  }
+}
