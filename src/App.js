@@ -1,35 +1,28 @@
-import React from "react";
-import styled, { createGlobalStyle } from "styled-components";
-import SearchBar from "./components/SearchBar";
-import SongsList from "./components/SongsList";
-import Player from "./components/Player";
-import Div100vh from "react-div-100vh";
-
-const GlobalStyle = createGlobalStyle`
-  *, ::before, ::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-  }
-`;
-const AppWrapper = styled.div`
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-`;
+import React from 'react';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import ContextProvider from './contexts/Context';
+import SearchContextProvider from './contexts/SearchContext';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Album from './pages/Album';
+import Artist from './pages/Artist';
+import Player from './components/Player';
 
 const App = () => {
   return (
-    <Div100vh>
-      <AppWrapper>
-        <GlobalStyle />
-        <SearchBar />
-        <SongsList />
-        <Player />
-      </AppWrapper>
-    </Div100vh>
+    <BrowserRouter>
+      <ContextProvider>
+        <SearchContextProvider>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/album/:id" component={Album} />
+            <Route path="/artist/:id" component={Artist} />
+          </Switch>
+          <Player />
+        </SearchContextProvider>
+      </ContextProvider>
+    </BrowserRouter>
   );
 };
 
