@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="d" x1="15.089" x2="14" y1="15.198" y2="52.416" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="c" x2="0" y1="39.359" y2="22.151" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#babdb6" offset="0"/>
+   <stop stop-color="#555753" offset="1"/>
+  </linearGradient>
+  <linearGradient id="b" x1="29.764" x2="29.667" y1="12.58" y2="34.973" gradientUnits="userSpaceOnUse">
+   <stop offset="0"/>
+   <stop stop-color="#fff" stop-opacity=".48454" offset="1"/>
+  </linearGradient>
+  <radialGradient id="a" cx="169.77" cy="100.2" r="11" gradientTransform="matrix(3.5623e-6 -1.072 1.9921 -1.2507e-6 -175.61 212.69)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f7f7f7" offset="0"/>
+   <stop stop-color="#ccd0c7" offset="1"/>
+  </radialGradient>
+ </defs>
+ <path d="m26.087 12.829v22.153h8.8261v-22.153h-8.8261z" fill="none" opacity=".15" stroke="url(#b)" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"/>
+ <path d="m26.5 13.406v21h8v-21h-8z" fill="url(#a)" fill-rule="evenodd"/>
+ <path d="m26.5 13.408v21.092h8v-21.092h-8z" fill="none" stroke="url(#c)" stroke-linecap="square" stroke-linejoin="round"/>
+ <path d="m27.5 14.406v19h6v-19h-6z" fill="none" stroke="url(#d)" stroke-linecap="square"/>
+ <path d="m28.019 14.943v8.3856l4.9939-0.61872v-7.8553l-4.9939 0.08839z" display="block" fill="#f7f7f7" opacity=".5"/>
+ <g transform="translate(-12.972)">
+  <path d="m26.087 12.829v22.153h8.8261v-22.153h-8.8261z" fill="none" opacity=".15" stroke="url(#b)" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"/>
+  <path d="m26.5 13.406v21h8v-21h-8z" fill="url(#a)" fill-rule="evenodd"/>
+  <path d="m26.5 13.408v21.092h8v-21.092h-8z" fill="none" stroke="url(#c)" stroke-linecap="square" stroke-linejoin="round"/>
+  <path d="m27.5 14.406v19h6v-19h-6z" fill="none" stroke="url(#d)" stroke-linecap="square"/>
+  <path d="m28.019 14.943v10.065l4.9939-0.61872v-9.5347l-4.9939 0.08839z" display="block" fill="#f7f7f7" opacity=".5"/>
+ </g>
+</svg>
