@@ -1,27 +1,33 @@
 #header {
   width: 100%;
   max-width: 920px;
+  margin-top:10px;
   margin: 0 auto;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:aqua;
-
+  background-color:#66004d;
+}
+.header-search-form {
+    margin-left: 108px;
+    width: 100%;
+    max-width: 500px;
+  }
+  .header-search-bar {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    padding: 4px 8px;
+  }
   #brand {
     font-size: 40px;
     font-weight: 600;
+    margin-top: 15px;
     color: white;
     text-decoration: none;
     letter-spacing: 2px;
     margin-left: 12px;
+    margin-bottom: 30px;
   }
-
-  #header-search-form {
-    margin-right: 28px;
-    width: 40%;
-    max-width: 400px;
-
-
-  }
-}
