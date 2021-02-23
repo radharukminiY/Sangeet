@@ -23,7 +23,6 @@ const Album = (props) => {
       .then((res) => dispatch({type: 'SET_ARTIST_DATA', data: {...res}}))
       .catch(console.error);
   };
-
   const fetchTracks = async () => {
     await fetchData('artist/' + id + '/top?limit=50')
       .then((res) => dispatch({type: 'SET_TRACKS', data: [...res.data]}))

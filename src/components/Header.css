@@ -1,20 +1,21 @@
 #header {
   width: 100%;
-  max-width: 920px;
-  margin-top:10px;
+  max-width: 1220px;
+  margin-top:30px;
+  padding-top: 10px;
   margin: 0 auto;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#66004d;
+  background-color:#ccffcc;
 }
-.header-search-form {
+#header .header-search-form {
     margin-left: 108px;
     width: 100%;
     max-width: 500px;
   }
-  .header-search-bar {
+  #header .header-search-bar {
     width: 100%;
     outline: none;
     border: none;
@@ -25,7 +26,7 @@
     font-size: 40px;
     font-weight: 600;
     margin-top: 15px;
-    color: white;
+    color: #ff6633;
     text-decoration: none;
     letter-spacing: 2px;
     margin-left: 12px;
