@@ -1,26 +1,29 @@
 #album-header {
   display: flex;
-  margin: 40px auto;
+  margin: 30px auto;
   justify-content: space-between;
-  width: 90vw;
+  width: 80vw;
   max-width: 600px;
+  background-color: #e6f9ff;
 
-  #album-img {
+}
+#album-header .album-img {
     display: block;
     width: 200px;
   }
 
   #album-info {
-    padding-left: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
+    background-color:#e6f9ff;
+    text-align: center;
+    margin-right:100px;
+    margin-top: 60px;
+    margin-left: 40px;
 
-    #album-title {
+}
+#album-header .album-title {
       display: block;
       font-size: 20px;
-      font-weight: 600;
+      font-weight:600;
     }
 
     #album-artist-name {
@@ -28,13 +31,11 @@
       font-size: 18px;
       font-weight: 500;
       text-decoration: none;
-      color: #5bb;
-      text-align: right;
+      color: #ff66a3;
+      text-align: center;
     }
 
     #album-tracks-count {
       display: block;
-      text-align: right;
+      text-align: center;
     }
-  }
-}
