@@ -45,7 +45,6 @@ const ResultMusics = () => {
           <MusicCardPlaceholder />
           <MusicCardPlaceholder />
           <MusicCardPlaceholder />
-          <MusicCardPlaceholder />
         </div>
       </>
     );

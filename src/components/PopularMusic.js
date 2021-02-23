@@ -8,8 +8,7 @@ const PopularMusics = () => {
   const [state, dispatch] = useReducer(popularReducer, initialState);
 
   useEffect(() => {
-    // 12 = 2x, 3y, 4z (for responsiveness)
-    fetchData('editorial/0/charts?limit=12')
+    fetchData('editorial/0/charts?limit=8')
       .then((res) => dispatch({type: 'ON_SUCCESS', data: res.tracks.data}))
       .catch(() => dispatch({type: 'ON_FAILURE'}));
   }, []);
@@ -29,7 +28,6 @@ const PopularMusics = () => {
         <h2 className="result-section-header">Popular Now</h2>
         {state.loading ? (
           <div className="result-section">
-            <MusicCardPlaceholder />
             <MusicCardPlaceholder />
             <MusicCardPlaceholder />
             <MusicCardPlaceholder />

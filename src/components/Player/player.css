@@ -14,18 +14,18 @@
   padding: 0px;
 }
 
-  .play-pause {
+#player  .play-pause {
     width: 40px;
     background-color: #ffff99;
     cursor: pointer;
   }
-  #current-time {
+#player  #current-time {
     font-size: 14px;
     color: #000000;
     margin-right: 10px;
   }
 
-  .progress {
+  #player .progress {
     position: relative;
     display: flex;
     flex-basis: 100%;
@@ -33,18 +33,18 @@
     background: #111;
     cursor: pointer;
 }
-    .progress-filled {
+    #player.progress-filled {
       background: #ddd;
     }
 
 
-  #duration {
+#player  #duration {
     font-size: 14px;
     color: #000000;
     margin: 0 10px;
   }
 
-  #playing-name {
+#player  #playing-name {
     color: orange;
     position: absolute;
     top: 6px;
@@ -56,7 +56,7 @@
     text-overflow: ellipsis;
   }
 
-  #playing-link {
+#player  #playing-link {
     font-size: 14px;
     color: #5bb;
     text-decoration: none;
@@ -65,7 +65,7 @@
     right: 10px;
   }
 
-  .playing-artist {
+#player  .playing-artist {
     font-size: 14px;
     position: absolute;
     bottom: 4px;
@@ -78,6 +78,6 @@
     white-space: nowrap;
     text-overflow: ellipsis;
   }
-  .player-thumbnail{
+#player  .player-thumbnail{
     width:80px;
   }

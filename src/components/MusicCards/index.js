@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {Context} from '../../contexts/Context';
 import playIcon from '../../images/play.svg';
 import pauseIcon from '../../images/pause.svg';
-import './index.css';
+import './card.css';
 
 const MusicCard = ({track, duration}) => {
   const {playingNow, setPlayingNowTo, isPlaying, playPause} = useContext(Context);
@@ -13,20 +13,17 @@ const MusicCard = ({track, duration}) => {
       // Play-Pause playingNow
       playPause();
     } else {
-      // Reset to defaults and set new track
-      // ** Normally, we should use 'duration' comes from props istead of '30',
-      // ** Deezer allows us to play only 30 seconds for each track.
       setPlayingNowTo(track, '00:30');
     }
   };
 
   return (
     <div className="music-card">
-      <div className="music-img" style={{backgroundImage: `url(${track.album.cover_medium})`}} alt={track.title}>
+      <div className="music-img" style={{backgroundImage: `url(${track.album.cover})`}} alt={track.title}>
         <div className={playingNow?.id === track.id && isPlaying ? 'img-overlay mouse-entered' : 'img-overlay'}>
           <img
             onClick={handlePlay}
-            className="play-btn"
+            className="play-button"
             src={playingNow?.id === track.id && isPlaying ? pauseIcon : playIcon}
             alt="Play-Pause"
           />
